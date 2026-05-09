@@ -1,0 +1,93 @@
+/* =========================================
+   1. GLOBAL STYLES & RESET
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* =========================================
+   2. LAYOUT (Header, Nav, Footer)
+   ========================================= */
+header {
+    background-color: #004a99; /* Professional Navy Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Links - Using Pseudo-selectors as per Question 9 */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Gold highlight on hover */
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* =========================================
+   3. CONTENT SECTIONS (Main & Tables)
+   ========================================= */
+main {
+    max-width: 900px;
+    margin: 20px auto; /* Centers the content */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a professional "lift" */
+}
+
+/* Styling the Table in services.html */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #004a99;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* =========================================
+   4. DECORATIVE ELEMENTS
+   ========================================= */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Slightly rounded corners for the hero image */
+}
