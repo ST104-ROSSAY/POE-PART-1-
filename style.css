@@ -2,7 +2,10 @@
    1. GLOBAL STYLES & RESET
    ========================================= */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif; /* Upgraded to Google Fonts */
+    font-optical-sizing: auto;
+    font-weight: 400; /* Standard normal weight */
+    font-style: normal;
     line-height: 1.6;
     margin: 0;
     padding: 0;
