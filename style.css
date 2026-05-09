@@ -58,22 +58,22 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a professional "lift" */
 }
 
-/* Styling the Table in services.html */
+/* Styling the Services Table */
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th {
-    background-color: #004a99;
-    color: white;
+    border-collapse: collapse; /* Removes double borders */
+    margin-top: 30px; 
+    font-size: 1.1em; /* Hierarchy */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
+    padding: 15px; /* Adds breathing room inside cells */
     text-align: left;
+    border-bottom: 1px solid #ddd; /* Subtle horizontal lines */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Professional "zebra" stripes */
 }
 
 /* =========================================
