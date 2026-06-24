@@ -94,3 +94,58 @@ img {
     margin: 0 auto;
     border-radius: 8px; /* Slightly rounded corners for the hero image */
 }
+/* =========================================
+   5. MOBILE RESPONSIVENESS (Part 3 Media Queries)
+   ========================================= */
+
+/* Hide the mobile menu button on large desktop screens */
+#mobile-menu-btn {
+    display: none;
+    background-color: #ffcc00; /* Brand gold */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------
+   Tablet and Mobile adjustments (Screens under 768px)
+   ---------------------------------------------------- */
+@media (max-width: 768px) {
+    
+    /* 1. Show the hamburger button */
+    #mobile-menu-btn {
+        display: inline-block;
+    }
+
+    /* 2. Hide the normal navigation links by default and stack them */
+    nav {
+        display: none; 
+        flex-direction: column;
+        background-color: #002244;
+    }
+
+    /* 3. When JavaScript adds the 'nav-active' class, show the menu */
+    nav.nav-active {
+        display: flex;
+    }
+
+    /* 4. Make the links easier to tap on touch screens */
+    nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* 5. Stop the Services table from breaking the screen width */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
